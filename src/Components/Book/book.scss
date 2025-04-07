@@ -1,0 +1,62 @@
+
+
+.book{
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: center;
+    background-image: url("../../Assets/fon.png");
+    h1{
+        font-size: calc(1.375rem + 1.5vw);
+        text-transform: uppercase;
+        color: var(--SecondaryColor);
+        text-align: center;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        label{
+            color: var(--textColor);
+            padding: 0 0.45rem;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+
+        textarea{
+            color: var(--textColor);
+            padding: 0 0.45rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            width: 100%;
+            height: 100px;
+            padding: 20px ;
+            &::placeholder{
+                color: var(--textColor);
+                padding: 0 0.45rem;
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+
+        }
+    }
+
+    .question{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        p{
+            color: white;
+            padding: 0 0.45rem;
+            font-size: 2rem;
+            font-weight: 500;
+            word-wrap: break-word;
+        }
+    }
+}

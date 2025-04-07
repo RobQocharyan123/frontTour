@@ -1,0 +1,885 @@
+.about {
+    width: 100%;
+    padding: 0 150px;
+  }
+
+  .about h2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    color: var(--border_color);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .about .aboutText {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .about .aboutText p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--border_color);
+    margin-top: 10px;
+  }
+
+  .about .aboutButtons {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .about .aboutButtons button {
+    border: 1px solid var(--balance_button-hover);
+    background-color: var(--nav_color);
+    color: var(--border_color);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .about .aboutButtons button:hover {
+    background-color: #b8f802;
+    border-color: transparent;
+    transition: all 0.3s linear;
+  }
+
+  .footerLinks ul li a:hover {
+    color: #b8f802;
+  }
+
+  .about .workWithUs {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .about .workWithUs h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+  }
+
+  .about .workWithUs .partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 54px;
+  }
+
+  .about .workWithUs .partners div {
+    width: 250px;
+    height: 200px;
+    background-color: var(--store_search-input);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+  }
+
+  .about .workWithUs .partners div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+
+  }
+
+  .aboutVirtual {
+    margin-top: 150px;
+    width: 100%;
+  }
+
+  .aboutVirtual h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: var(--border_color);
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .aboutVirtual h3 {
+    font-weight: 500;
+    color: #b8f802;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .aboutVirtual .virtualText {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .aboutVirtual .virtualText p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--border_color);
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .aboutVirtual .virtualPartners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .aboutVirtual .virtualPartners .virtualSection {
+    width: 40%;
+    display: flex;
+    background-color: var(--store_search-input);
+    padding: 40px;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+
+  .virtualPartners .virtualSection .virtualLogo {
+    width: 55px;
+    height: 55px;
+    background-color: #b8f802;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 15px;
+  }
+
+  .virtualSection .virtualPartnerText {
+    margin-left: 30px;
+  }
+
+  .virtualSection .virtualPartnerText h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+    color: var(--border_color);
+  }
+
+  .about .virtualPartnerText p {
+    margin-top: 10px;
+  }
+
+  .about .info .infoLeft {
+    width: 50%;
+  }
+
+  .about .info .infoRight {
+    width: 45%;
+  }
+
+  .about .site {
+    padding: 0;
+  }
+
+  .about .selectCurencyAbout {
+    display: none;
+  }
+
+  .about .infoRight .infoRightButtons ul .active {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--border_color);
+    background-color: var(--nav_color);
+    border: 1px solid #dcdcdc;
+    border-radius: 30px;
+    transition: all 0.3s linear;
+  }
+
+  /* display none items */
+
+  .about .contactUs .small {
+    display: none;
+  }
+
+  .footerButtons .telegram:hover {
+    background-color: #b8f802;
+  }
+
+  .about .info .infoButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* cliked */
+
+  .about .clicked {
+    color: #b8f802 !important;
+    transition: all 0.3s linear;
+    background-color: #464646;
+  }
+
+  @media screen and (max-width: 1750px) {
+    .about .selectCurencyAbout {
+      display: block;
+      list-style-type: disc;
+      list-style-position: inside;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--border_color);
+      border: 1px solid #dcdcdc;
+      border-radius: 30px;
+      transition: all 0.3s linear;
+      padding: 10px 20px;
+    }
+
+    .about .infoRightButtons {
+      position: relative;
+    }
+
+    .about .infoRightButtons:nth-child(1) {
+      width: 150px;
+    }
+
+    .about .infoRightButtons:nth-child(1) .selectCurencyAbout {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .about .infoRightButtons .filterArzheq {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 108;
+      background-color: #ffffff;
+      width: 100%;
+    }
+
+
+  }
+
+
+
+  @media screen and (max-width: 1500px) {
+    .about h2 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+
+    .footer {
+      padding: 50px 80px;
+    }
+
+    .about .info .infoLeft {
+      width: 53%;
+    }
+
+    .about .infoRight .addButtons button {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .about .inputs .personalInputs {
+      flex-direction: column;
+    }
+
+    .about .inputs .personalInputs .nameInput {
+      width: 100%;
+    }
+
+    .about .inputs .personalInputs .lastNameInput {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .about h2 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .about .info {
+      flex-direction: column;
+    }
+
+    .about .info .infoLeft {
+      width: 100%;
+    }
+
+    .about .info .infoRight {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .about .workWithUs h2 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .about .workWithUs .partners {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .about .aboutVirtual h1 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .aboutVirtual .virtualText p {
+      width: 80%;
+    }
+
+    .aboutVirtual .virtualPartners {
+      width: 100%;
+    }
+
+    .about .faq .faqText h1 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .about .faq .faqText {
+      width: 25%;
+    }
+
+    .about .faq .faqAcordion {
+      width: 70%;
+    }
+
+    .about .faq .faqAcordion .acordion p {
+      font-size: 20px;
+      line-height: 25px;
+      width: 90%;
+    }
+
+    .about .contactUs h1 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .about .icons .commentIcon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .about .icons .commentIcon svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    .about .icons ul li a {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .about .icons .letterIcon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .about .icons .letterIcon svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    .footer {
+      padding: 50px 10px;
+    }
+
+    .footerLinks ul li a {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .footerLogo p {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+
+    .about {
+      padding: 0 50px;
+    }
+
+    .about h2 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    .about .aboutText p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .about .workWithUs h2 {
+      font-size: 30px;
+      line-height: 35px;
+      margin-top: 0;
+    }
+
+    .about .workWithUs .partners {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .about .aboutVirtual h1 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    .about .aboutVirtual .virtualPartners .virtualSection {
+      width: 45%;
+    }
+
+    .about .faq {
+      padding: 0 20px;
+    }
+
+    .about .faq .faqAcordion .acordion .span {
+      font-size: 10px;
+      line-height: 15px;
+    }
+
+    .about .faq .faqText h1 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .about .faq .faqText {
+      width: 25%;
+    }
+
+    .about .icons h2 {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    .about .faq .faqAcordion .acordion p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .about .contactUsSections .icons {
+      width: 45%;
+    }
+
+    .about .contactUs h1 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 1000px) {
+    .about {
+      padding: 0 20px;
+    }
+
+    .about .icons .letterIcon {
+      padding: 10px;
+    }
+
+    .icons ul {
+      margin-left: 27px;
+    }
+
+  }
+
+  @media screen and (max-width: 800px) {
+    .about h2 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .about .aboutText p {
+      font-size: 12px;
+      line-height: 17px;
+      margin-top: 7px;
+    }
+
+    .about .aboutButtons button {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .about .country .popularCountry ul li {
+      font-size: 12px;
+    }
+
+    .about .site .popularSite ul li {
+      font-size: 12px;
+    }
+
+    .about .country .popularCountry ul li:hover {
+      font-size: 12px;
+    }
+
+    .about .site .popularSite ul li:hover {
+      font-size: 12px;
+    }
+
+    .about .country .popularCountry ul .active:hover {
+      font-size: 12px;
+    }
+
+    .about .site .popularSite ul .active:hover {
+      font-size: 12px;
+    }
+
+    .about .infoRight .addButtons button {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .about .workWithUs h2 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .about .aboutVirtual .virtualText p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .about .contactUs .contactUsSections {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about .contactUsSections .inputs {
+      width: 100%;
+    }
+
+    .about .contactUsSections .icons {
+      width: 100%;
+    }
+
+    .about .icons ul {
+      margin: 0;
+      display: flex;
+    }
+
+    .about .icons h2 {
+      margin: 0;
+      margin-top: 20px;
+    }
+
+
+    .about .info {
+      padding: 0 20px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 660px) {
+    .about .infoLeftCategory .country {
+      width: 100%;
+    }
+
+    .about .infoLeftCategory .site {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .about .aboutVirtual .virtualPartners {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about .aboutVirtual .virtualPartners .virtualSection {
+      width: 90%;
+      background-color: inherit;
+    }
+
+    .about .faq {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about .faq .faqText {
+      width: 60%;
+      align-items: center;
+    }
+
+    .about .faq .faqAcordion {
+      width: 100%;
+    }
+
+    .about .icons ul li a {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .about .icons .letterIcon {
+      width: 35px;
+      height: 35px;
+    }
+
+    .about .icons .letterIcon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .about .icons .commentIcon {
+      width: 35px;
+      height: 35px;
+    }
+
+    .about .icons .commentIcon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+
+
+    .about .info {
+      display: none;
+    }
+
+
+
+    .about .workWithUs .partners {
+      justify-content: center;
+    }
+
+    .about .workWithUs .partners div img {
+      width: 100%;
+    }
+
+    .about .aboutVirtual h3 {
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    .about .aboutVirtual h1 {
+      font-size: 24px;
+      line-height: 30px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .about .aboutVirtual .virtualText p {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .about .aboutVirtual .virtualText {
+      margin-top: 10px;
+    }
+
+    .about .faq .faqText h1 {
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+    }
+
+    .faq .faqText p {
+      font-size: 14px;
+      line-height: 19px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .about .contactUs .contactUsSections {
+      padding: 20px;
+      border-radius: 30px;
+    }
+
+    .about .contactUsSections .inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about .contactUs .big {
+      display: none;
+    }
+
+    .about .contactUs .small {
+      display: block;
+    }
+
+    .about .inputs button {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .about .icons ul {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about .contactUsSections .icons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about .icons h2 {
+      text-align: center;
+    }
+
+
+  }
+
+
+  @media screen and (max-width:550px) {
+    .about .aboutButtons {
+      width: 90%;
+
+    }
+
+    .about .aboutVirtual .virtualPartners .virtualSection {
+
+      padding: 0;
+    }
+
+    .about .aboutVirtual .virtualPartners .virtualPartnerText {
+      font-size: 10px;
+      line-height: 15px;
+    }
+
+    .about .virtualPartners .virtualSection .virtualLogo {
+      width: 35px;
+      height: 35px;
+      padding: 10px;
+    }
+
+    .about .faq .faqAcordion .acordion {
+      padding: 10px;
+    }
+
+    .about .acordion .arrowBottom,
+    .about .acordion .arrowTop {
+      width: 15px;
+      height: 15px;
+    }
+
+    .about .acordion .arrowTop {
+      top: 10px;
+      right: 5px;
+    }
+
+    .about .acordion .arrowBottom {
+      bottom: 10px;
+      right: 5px;
+    }
+
+    .about .faq .faqText p {
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    .about .contactUs {
+      padding: 10px;
+    }
+
+    .about .contactUs h1 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+
+  }
+
+  @media screen and (max-width:400px) {
+    .about h2 {
+      margin-top: 20px;
+      font-size: 17px;
+      line-height: 23px;
+    }
+
+    .about .aboutButtons button {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .about .workWithUs .partners {
+      /* gap: 10px; */
+      margin-top: 20px;
+    }
+
+    .about .workWithUs .partners div {
+      width: 80%;
+      border-radius: 0;
+    }
+
+    .about .workWithUs .partners div img {
+      border-radius: 0;
+
+    }
+
+    .about .aboutVirtual {
+      margin-top: 50px;
+    }
+
+    .about .aboutVirtual h1 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .aboutVirtual .virtualText p {
+      width: 90%;
+    }
+
+    .about .faq .faqAcordion .acordion p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .about .contactUs h1 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+
+    .about .icons {
+      margin-top: 20px;
+    }
+
+    .about .icons h2 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .about .contactUsSections .inputs {
+      padding: 0 10px;
+      padding-bottom: 30px;
+    }
+
+    .about .contactUs .contactUsSections {
+      padding: 5px;
+    }
+  }

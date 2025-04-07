@@ -1,0 +1,19 @@
+
+
+.star ul{
+    list-style-type: none;
+}
+
+
+.star span{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width:500px) {
+    .star span{
+        font-size: 15px;
+    }
+}
+
+

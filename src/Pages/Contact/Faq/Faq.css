@@ -1,0 +1,87 @@
+
+
+.faq{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 100px;
+    margin-top: 40px;
+}
+
+
+.faq .faqText{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.faq .faqText h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 49px;
+    color: var(--border_color);
+    text-align: left;
+
+}
+
+.faq .faqText p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--border_color);
+    margin-top: 10px;
+}
+
+
+.faq .faqAcordion{
+    width: 75%;
+}
+
+.faq .faqAcordion .acordion{
+    position: relative;
+    background-color: var(--store_search-input);
+    border-radius: 20px;
+    padding:30px;
+    margin-top: 20px;
+}
+
+.faq .faqAcordion .acordion svg path{
+    fill: var(--border_color);
+}
+
+.faq .faqAcordion .acordion p{
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--border_color);
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.faq .faqAcordion .acordion .span{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 23px;
+   color: var(--border_color);
+}
+
+.acordion .arrowBottom{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+
+.acordion .arrowTop{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
