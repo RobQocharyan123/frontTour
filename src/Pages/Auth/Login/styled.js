@@ -1,6 +1,6 @@
-import { Col, Modal } from "antd";
-import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import { Col, Modal } from 'antd';
+import { Link } from 'react-router-dom';
+import { styled } from 'styled-components';
 
 export const LoginModalBlock = styled(Modal)`
   .ant-modal-body {
@@ -19,6 +19,7 @@ export const LoginModalBlock = styled(Modal)`
 `;
 
 export const LoginBlock = styled(Col)`
+  width: 100%;
   background-color: #fff;
   padding: 30px;
   justify-self: start;
@@ -26,10 +27,6 @@ export const LoginBlock = styled(Col)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
-
-
 
   .ant-row {
     flex-direction: column;
@@ -50,9 +47,9 @@ export const LoginBlock = styled(Col)`
       border-radius: 10px;
       margin: 0;
       font-family: ${() =>
-        localStorage.getItem("language") === "am"
-          ? "Arial, sans-serif !important"
-          : "Inter, serif !important"};
+        localStorage.getItem('language') === 'am'
+          ? 'Arial, sans-serif !important'
+          : 'Inter, serif !important'};
 
       &::placeholder {
         font-weight: 500;
@@ -81,9 +78,9 @@ export const LoginBlock = styled(Col)`
       line-height: 20px;
       color: #000;
       font-family: ${() =>
-        localStorage.getItem("language") === "am"
-          ? "Arial, sans-serif !important"
-          : "Inter, serif !important"};
+        localStorage.getItem('language') === 'am'
+          ? 'Arial, sans-serif !important'
+          : 'Inter, serif !important'};
     }
   }
 
@@ -103,9 +100,9 @@ export const LoginBlock = styled(Col)`
 
 export const NewUserLinkBlock = styled(Col)`
   font-family: ${() =>
-    localStorage.getItem("language") === "am"
-      ? "Arial, sans-serif !important"
-      : "Inter, serif !important"};
+    localStorage.getItem('language') === 'am'
+      ? 'Arial, sans-serif !important'
+      : 'Inter, serif !important'};
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -143,9 +140,9 @@ export const RememberBlock = styled(Col)`
   a,
   span {
     font-family: ${() =>
-      localStorage.getItem("language") === "am"
-        ? "Arial, sans-serif !important"
-        : "Inter, serif !important"};
+      localStorage.getItem('language') === 'am'
+        ? 'Arial, sans-serif !important'
+        : 'Inter, serif !important'};
   }
 `;
 
@@ -155,9 +152,9 @@ export const RegisterLink = styled(Link)`
   color: #0059ff;
   margin-left: 5px;
   font-family: ${() =>
-    localStorage.getItem("language") === "am"
-      ? "Arial, sans-serif !important"
-      : "Inter, serif !important"};
+    localStorage.getItem('language') === 'am'
+      ? 'Arial, sans-serif !important'
+      : 'Inter, serif !important'};
 `;
 
 export const LogInTitle = styled(Col)`
@@ -165,7 +162,7 @@ export const LogInTitle = styled(Col)`
   font-size: 48px;
   font-weight: 500;
   font-family: ${() =>
-    localStorage.getItem("language") === "am"
-      ? "Arial, sans-serif !important"
-      : "Inter, serif !important"};
+    localStorage.getItem('language') === 'am'
+      ? 'Arial, sans-serif !important'
+      : 'Inter, serif !important'};
 `;

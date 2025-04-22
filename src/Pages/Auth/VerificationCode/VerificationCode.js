@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { verifyAccountPostMethod } from "../../../Components/Services/authService.js";
 
 const VerificationPage = ({ isverification, setIsverification }) => {
   const userId = useSelector(
@@ -16,11 +17,13 @@ const VerificationPage = ({ isverification, setIsverification }) => {
   const navigate = useNavigate();
 
   const handleSubmit = (values) => {
-    const data = {
-      code: values?.verification,
+    const otp = {
+      otp: values?.verification,
     };
 
-    console.log(data, "this is data");
+    dispatch(verifyAccountPostMethod(otp))
+
+    console.log(otp, "this is otp");
   };
 
   const handleCancel = () => {

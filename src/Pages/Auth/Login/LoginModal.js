@@ -1,25 +1,25 @@
-import { Button, Modal, Checkbox, Form, Typography } from "antd";
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { useDispatch } from "react-redux";
-import { userLoginService } from "../../../Components/Services/authService.js";
-import Input from "./../../../utils/index.js";
-import { toast } from "react-toastify";
+import { Button, Modal, Checkbox, Form, Typography } from 'antd';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useDispatch } from 'react-redux';
+import { userLoginService } from '../../../Components/Services/authService.js';
+import Input from './../../../utils/index.js';
+import { toast } from 'react-toastify';
 import {
   ButtonBlock,
   LoginBlock,
   LoginModalBlock,
   NewUserLinkBlock,
   RegisterLink,
-  RememberBlock
-} from "./styled.js";
+  RememberBlock,
+} from './styled.js';
 const { Link: AntLink } = Typography;
 
 const LoginModal = ({
   isLoginOpen,
   setIsLoginOpen,
   setIsRegisterOpen,
-  setIsForgetPassword
+  setIsForgetPassword,
 }) => {
   const [isRemember, setIsRemember] = useState(false);
   const { t } = useTranslation();
@@ -49,7 +49,7 @@ const LoginModal = ({
     const data = {
       email: values.email,
       password: values.password,
-      limit: isRemember
+      limit: isRemember,
     };
 
     try {
@@ -57,8 +57,6 @@ const LoginModal = ({
 
       if (!res.success) {
         toast.error(res?.message);
-        form.resetFields();
-        setIsLoginOpen(false);
       }
       return res;
     } catch (err) {
@@ -67,7 +65,7 @@ const LoginModal = ({
   };
   return (
     <LoginModalBlock
-      title={t("login.login")}
+      title={t('login.login')}
       open={isLoginOpen}
       onOk={handleOk}
       onCancel={handleCancel}
@@ -76,25 +74,25 @@ const LoginModal = ({
       <LoginBlock>
         <Form name="login" onFinish={handleSubmit} form={form}>
           <Form.Item
-            label={t("login.email")}
+            label={t('login.email')}
             name="email"
             colon={false}
             labelAlign="left"
-            rules={[{ required: true, message: "Email is require" }]}
+            rules={[{ required: true, message: 'Email is require' }]}
           >
-            <Input placeholder={t("login.email")} />
+            <Input type={'email'} placeholder={t('login.email')} />
           </Form.Item>
           <Form.Item
-            label={t("login.password")}
+            label={t('login.password')}
             name="password"
             colon={false}
             labelAlign="left"
-            rules={[{ required: true, message: "Password is require" }]}
+            rules={[{ required: true, message: 'Password is require' }]}
           >
             <Input
               inptype="password"
               password
-              placeholder={t("login.password")}
+              placeholder={t('login.password')}
             />
           </Form.Item>
           <Form.Item name="remember" valuePropName="checked" label={null}>
@@ -103,25 +101,25 @@ const LoginModal = ({
                 checked={isRemember}
                 onChange={(ev) => setIsRemember(ev.target.checked)}
               >
-                {t("login.rememberMe")}
+                {t('login.rememberMe')}
               </Checkbox>
               <AntLink to="/forgotPassword" onClick={handelGoResetPassword}>
-                {t("login.forgotPassword")}
+                {t('login.forgotPassword')}
               </AntLink>
             </RememberBlock>
           </Form.Item>
           <Form.Item label={null}>
             <ButtonBlock>
               <Button type="primary" htmlType="submit">
-                {t("login.login")}
+                {t('login.login')}
               </Button>
             </ButtonBlock>
           </Form.Item>
 
           <NewUserLinkBlock>
-            {t("login.haveNotAccaunt")}
+            {t('login.haveNotAccaunt')}
             <RegisterLink to="" onClick={handelGoRegister}>
-              {t("login.register")}
+              {t('login.register')}
             </RegisterLink>
           </NewUserLinkBlock>
         </Form>
