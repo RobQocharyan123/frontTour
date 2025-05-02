@@ -49,7 +49,7 @@ const Navbar = () => {
               })}
 
             <button className="btn">
-              <Link to="/book">{t("header.book")}</Link>
+              <Link to={`/${t("header.book")}`}>{t("header.book")}</Link>
             </button>
           </ul>
 
