@@ -1,10 +1,10 @@
-import "./details.css";
-import { ArrowLeftOutlined } from "@ant-design/icons";
-import { Tooltip, Typography } from "antd";
-import { useEffect, useState } from "react";
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import StarRatingComponent from "../../../Components/Star/StarRatingComponent";
-import { useTranslation } from "react-i18next";
+import './details.css';
+import { ArrowLeftOutlined } from '@ant-design/icons';
+import { Tooltip, Typography } from 'antd';
+import { useEffect, useState } from 'react';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
+import StarRatingComponent from '../../../Components/Star/StarRatingComponent';
+import { useTranslation } from 'react-i18next';
 
 const { Paragraph } = Typography;
 
@@ -14,9 +14,9 @@ const Details = ({ details, setDetails }) => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const element = document.getElementById("details");
+    const element = document.getElementById('details');
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
 
@@ -28,7 +28,7 @@ const Details = ({ details, setDetails }) => {
       <div className="about">
         <div className="imageDiv">
           <img src={details?.imgSrc} alt={details?.destTitle} />
-          <h3>{t("main.hotels")}</h3>
+          <h3>{t('main.hotels')}</h3>
 
           {Array.isArray(details.hotels) &&
             details?.hotels.map((i) => {
@@ -36,7 +36,7 @@ const Details = ({ details, setDetails }) => {
                 <span className="continent flex" key={i?.id}>
                   <a
                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                      i?.name,
+                      i?.name
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -47,10 +47,10 @@ const Details = ({ details, setDetails }) => {
                     <span
                       className="name"
                       style={{
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
-                        textOverflow: "ellipsis",
-                        width: "150px",
+                        whiteSpace: 'nowrap',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        width: '150px',
                       }}
                     >
                       {i?.name}
@@ -72,13 +72,13 @@ const Details = ({ details, setDetails }) => {
             {details?.paragraph}
           </Paragraph>
           <span
-            style={{ color: "#1890ff", cursor: "pointer", marginLeft: 5 }}
+            style={{ color: '#1890ff', cursor: 'pointer', marginLeft: 5 }}
             onClick={() => setExpanded(!expanded)}
           >
-            {expanded ? t("main.less") : t("main.more")}
+            {expanded ? t('main.less') : t('main.more')}
           </span>
           <button className="btn">
-            <a href={details.book}>{t("header.book")}</a>
+            <a href={details.book}>{t('header.book')}</a>
           </button>
         </div>
       </div>

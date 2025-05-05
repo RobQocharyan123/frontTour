@@ -44,7 +44,7 @@ const AuthModals = () => {
       key: '1',
       label: (
         <Button type="primary" onClick={handleLogOut} style={{ width: '100%' }}>
-          logOut
+          {t('login.logOut')}
         </Button>
       ),
     },

@@ -1,11 +1,13 @@
-import "./book.css";
-import { useState } from "react";
-import axios from "axios";
+import './book.css';
+import { useState } from 'react';
+import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 const Book = () => {
-  const [prompt, setPrompt] = useState("");
-  const [response, setResponse] = useState("");
-  const HTTP = "http://localhost:8020/chat";
+  const [prompt, setPrompt] = useState('');
+  const [response, setResponse] = useState('');
+  const HTTP = 'http://localhost:8020/chat';
+  const { t, i18n } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +15,7 @@ const Book = () => {
       .post(`${HTTP}`, { prompt })
       .then((res) => setResponse(res.data))
       .catch((error) => console.log(error));
-    setPrompt("");
+    setPrompt('');
   };
 
   const handlePrompt = (e) => {
@@ -21,18 +23,18 @@ const Book = () => {
   };
   return (
     <div className="book">
-      <h1>Learn more by asking the smart AI tool</h1>
+      <h1>{t('bookComponent.bigTitle')}</h1>
 
       <form onSubmit={handleSubmit} className="form">
         <div className="form-group">
-          <label htmlFor="">Ask Question</label>
+          <label htmlFor="">{t('bookComponent.askQuestion')}</label>
           <textarea
             className="shadow-sm"
-            placeholder="Enter Text"
+            placeholder={t('bookComponent.enterText')}
             value={prompt}
             onChange={handlePrompt}
             onKeyDown={(e) => {
-              if (e.key === "Enter" && !e.shiftKey) {
+              if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
                 handleSubmit(e);
               }
@@ -43,7 +45,7 @@ const Book = () => {
 
       <div className="question">
         <p className="text-light">
-          {response ? response : "Ask me anything  about traveling..."}
+          {response ? response : t('bookComponent.askMe')}
         </p>
       </div>
     </div>

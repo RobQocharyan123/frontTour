@@ -8,7 +8,11 @@ import MainPages from './Pages/MainPages/MainPages';
 import Contact from './Pages/Contact/Contact';
 import { ToastContainer } from 'react-toastify';
 import { useEffect } from 'react';
-import { getAuthState, userGetData } from './Components/Services/authService.js';
+import {
+  getAuthState,
+  userGetData,
+} from './Components/Services/authService.js';
+import About from './Components/About/index.js';
 
 function App() {
   useEffect(() => {
@@ -26,9 +30,10 @@ function App() {
         <Main /> */}
         <Routes>
           <Route path="/" element={<MainPages />} />
-          <Route path="/Home" element={<MainPages />} />
-          <Route path="/BOOK NOW" element={<Book />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/home" element={<MainPages />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/book" element={<Book />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />
